@@ -1,3 +1,5 @@
+#a URL needs to be set on or near line 150!
+
 from machine import Pin, I2C
 from onewire import OneWire
 from ds18x20 import DS18X20

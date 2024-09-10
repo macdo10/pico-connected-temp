@@ -145,13 +145,13 @@ while True:
                 print("%02d:%02d:%02d" %(t[3],t[4],t[5]))
                 dsdate = ("%d-%02d-%02d" %(t[0], t[1], t[2]))
                 dstime = ("%02d:%02d:%02d" %(t[3], t[4], t[5]))
-                a = ("https://pico.axepat.com/temp_in.php?dt={}%20{}&temp={}&sensor={}".format(dsdate, dstime, temp, sensor))
+                a = ("https://your_host_name/temp_in.php?dt={}%20{}&temp={}&sensor={}".format(dsdate, dstime, temp, sensor)) #change URL to match your hostname and path to the file.
                 #print(a)      #Uncomment to see what is sent to the webpage
                 try:
                     r = urequests.get(a)
                     time.sleep(3) 
                     #print(r.content) #Uncomment this to see what the webpage actually did
-                    print("page status", r.status_code)
+                    print("page status", r.status_code) #If everything worked normally, this should return code 200
                     r.close()
                 except Exception:
                     print("could not send data")

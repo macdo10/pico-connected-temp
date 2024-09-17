@@ -1,5 +1,3 @@
-Here's the SQL to create the needed table: 
-
 CREATE TABLE sensor_data (
     ID INT AUTO_INCREMENT PRIMARY KEY,
     sensor TEXT COLLATE utf8_general_ci,

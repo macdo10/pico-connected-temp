@@ -177,7 +177,7 @@
 
         $sentence = '';
 
-        # Query for each sensor
+        # Query for each sensor - enter the sensors and the display name here.
         $sensors = [
             '28ee581437200182' => 'Upstairs',
             '28d9b516372001db' => 'On the ground floor',
